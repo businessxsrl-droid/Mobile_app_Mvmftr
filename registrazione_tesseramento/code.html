@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tesseramento - Gli Italiani in Confederazione</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#a5c8ff",
+              "surface-container": "#e7eefe",
+              "surface-bright": "#f9f9ff",
+              "on-tertiary-fixed": "#410001",
+              "on-primary-fixed-variant": "#17487d",
+              "tertiary-fixed": "#ffdad5",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#930005",
+              "error-container": "#ffdad6",
+              "on-surface": "#151c27",
+              "tertiary-container": "#980006",
+              "primary-fixed": "#d4e3ff",
+              "on-error-container": "#93000a",
+              "surface": "#f9f9ff",
+              "on-error": "#ffffff",
+              "on-primary-container": "#91baf7",
+              "secondary-container": "#89faa5",
+              "tertiary-fixed-dim": "#ffb4a9",
+              "tertiary": "#6d0003",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed": "#001c3a",
+              "on-surface-variant": "#42474f",
+              "surface-container-low": "#f0f3ff",
+              "outline": "#737780",
+              "on-secondary-fixed": "#00210b",
+              "secondary": "#006d34",
+              "background": "#f9f9ff",
+              "primary-fixed-dim": "#a5c8ff",
+              "surface-tint": "#346096",
+              "on-tertiary-container": "#ff9f93",
+              "inverse-on-surface": "#ebf1ff",
+              "primary-container": "#1a4a7f",
+              "primary": "#003361",
+              "surface-variant": "#dce2f3",
+              "inverse-surface": "#2a313d",
+              "surface-container-high": "#e2e8f8",
+              "on-secondary-container": "#007438",
+              "secondary-fixed": "#89faa5",
+              "error": "#ba1a1a",
+              "secondary-fixed-dim": "#6cdd8c",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#005226",
+              "surface-container-lowest": "#ffffff",
+              "outline-variant": "#c3c6d1",
+              "surface-container-highest": "#dce2f3",
+              "on-background": "#151c27",
+              "surface-dim": "#d3daea"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-[#f9f9ff]/80 dark:bg-[#151c27]/80 backdrop-blur-md fixed top-0 w-full z-50 flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#003361] dark:text-[#91baf7] cursor-pointer">menu</span>
+<span class="font-['Manrope'] font-extrabold text-[#003361] dark:text-[#91baf7] tracking-[-0.02em] text-lg">Gli Italiani in Confederazione</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="Profile" data-alt="professional headshot of a distinguished italian man in a navy suit soft studio lighting neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb2JLwk3vArBzXnVkQVi12dkV6IInVEtSbf7Ss-_3g4L0kb2Q9YFAGCedeqcqXko8iqLnKi9gJAdsIHCrRZKs7zXZdxfSTnaxC2XGGZGUXf2LXLcd5V2OfJ2WyvKdAbQ5YAAiEFzNWthbTgFyZVSt6Nb6vW1vfM0rA-OA1kUwdZ71RhoZDVLiBFrF5f0mcQGwDWQ1hwxzA6ph00UWzbfWvuaL1FwgLdu3OAsKRxHr8gfzdCrE62ylK7bk1GDMhZl3x4_JEqzg-6Ypv"/>
+</div>
+</header>
+<main class="pt-24 pb-12 px-6 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Context & Imagery (Asymmetric Design) -->
+<div class="lg:col-span-5 flex flex-col justify-center">
+<div class="mb-8 relative">
+<div class="absolute -top-4 -left-4 w-12 h-1 bg-secondary rounded-full"></div>
+<h1 class="text-display-lg font-headline font-extrabold text-primary leading-tight tracking-[-0.02em] mb-4">
+                    Unisciti alla Nostra <br/><span class="text-secondary">Comunità</span>
+</h1>
+<p class="text-body-lg text-on-surface-variant leading-relaxed max-w-md">
+                    Il tesseramento rappresenta il primo passo per partecipare attivamente alla vita istituzionale e sociale degli italiani in Svizzera.
+                </p>
+</div>
+<!-- Visual Decorative Element: Institutional Card -->
+<div class="bg-surface-container-low rounded-xl p-8 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 group-hover:scale-110 transition-transform duration-500"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="account_balance">account_balance</span>
+<h3 class="font-headline font-bold text-lg mb-2">Perché tesserarsi?</h3>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-label-md uppercase tracking-wider text-on-surface-variant">Rappresentanza Istituzionale</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-label-md uppercase tracking-wider text-on-surface-variant">Accesso a Servizi Convenzionati</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-label-md uppercase tracking-wider text-on-surface-variant">Partecipazione ad Eventi Esclusivi</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 flex gap-2">
+<div class="w-8 h-1 bg-secondary"></div>
+<div class="w-8 h-1 bg-surface-container-highest"></div>
+<div class="w-8 h-1 bg-tertiary"></div>
+</div>
+</div>
+</div>
+<!-- Right Column: The Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_12px_40px_rgba(21,28,39,0.06)] p-8 lg:p-12 border border-outline-variant/10">
+<div class="mb-10">
+<h2 class="text-headline-md font-headline font-bold text-primary mb-2">Modulo di Tesseramento</h2>
+<div class="w-16 h-0.5 bg-secondary mb-4"></div>
+</div>
+<form class="space-y-8">
+<!-- Name Field -->
+<div class="group">
+<label class="block text-label-md font-label uppercase tracking-[0.05em] text-on-surface-variant mb-2" for="name">Nome Completo</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-secondary focus:ring-0 px-0 py-3 text-body-lg transition-colors placeholder:text-outline-variant" id="name" name="name" placeholder="Mario Rossi" type="text"/>
+</div>
+<!-- Email Field -->
+<div class="group">
+<label class="block text-label-md font-label uppercase tracking-[0.05em] text-on-surface-variant mb-2" for="email">Indirizzo Email</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-secondary focus:ring-0 px-0 py-3 text-body-lg transition-colors placeholder:text-outline-variant" id="email" name="email" placeholder="mario.rossi@esempio.it" type="email"/>
+</div>
+<!-- Regional Info Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group">
+<label class="block text-label-md font-label uppercase tracking-[0.05em] text-on-surface-variant mb-2" for="region">Cantone / Regione</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-secondary focus:ring-0 px-0 py-3 text-body-lg transition-colors appearance-none" id="region" name="region">
+<option disabled="" selected="" value="">Seleziona Cantone</option>
+<option value="ticino">Ticino</option>
+<option value="ginevra">Ginevra</option>
+<option value="zurigo">Zurigo</option>
+<option value="vado">Vaud</option>
+</select>
+</div>
+<div class="group">
+<label class="block text-label-md font-label uppercase tracking-[0.05em] text-on-surface-variant mb-2" for="municipality">Comune di Residenza</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-secondary focus:ring-0 px-0 py-3 text-body-lg transition-colors placeholder:text-outline-variant" id="municipality" name="municipality" placeholder="Lugano" type="text"/>
+</div>
+</div>
+<!-- Presenter Code -->
+<div class="group pt-4">
+<div class="flex items-center justify-between mb-2">
+<label class="block text-label-md font-label uppercase tracking-[0.05em] text-on-surface-variant" for="promo">Codice Presentatore (Opzionale)</label>
+<span class="material-symbols-outlined text-outline text-sm" data-icon="help_outline">help_outline</span>
+</div>
+<input class="w-full bg-surface-container-low border-0 rounded-lg px-4 py-3 text-body-lg focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-outline-variant" id="promo" name="promo" placeholder="IT-12345" type="text"/>
+</div>
+<!-- Terms -->
+<div class="flex items-center gap-3 py-4">
+<input class="w-5 h-5 rounded border-outline-variant text-secondary focus:ring-secondary/20" id="terms" type="checkbox"/>
+<label class="text-body-sm text-on-surface-variant" for="terms">
+                            Accetto i <a class="text-primary underline underline-offset-4 decoration-outline-variant" href="#">termini e le condizioni</a> del tesseramento istituzionale.
+                        </label>
+</div>
+<!-- Actions -->
+<div class="pt-6 flex flex-col md:flex-row items-center gap-6">
+<button class="w-full md:w-auto px-10 py-4 bg-primary text-on-primary font-headline font-bold rounded-lg hover:opacity-90 transition-opacity active:scale-95 duration-150" type="submit">
+                            Completa Tesseramento
+                        </button>
+<button class="text-label-md font-label uppercase tracking-[0.05em] text-primary hover:text-secondary transition-colors" type="button">
+                            Annulla
+                        </button>
+</div>
+</form>
+</div>
+<!-- Bottom Graphic Accent -->
+<div class="mt-8 flex justify-center items-center gap-8 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Institutional Seal" class="h-12" data-alt="official institutional seal of italy minimalist monochrome vector style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_dcxtrzCy_wPZfuBH6VSsKu2-0xzS0UIJvrNhSvOtoaac61kIWe5zsVQwIMR1nW1y2SWDHqO83NEy5xL_-xJr3eU_vAito3QWbcSy4GaenjyujSwSz1zTxJYt5IVk1MYPb8KUzzQVhoutBivdUkTHfCiN7lpdvZc6kfMDEESD2ZjhXtpk9cbJXdJ453qXlG4bmfWsRlX61arOT-5EXxiV_nTJ42u2IIKAqcSx-aMg9UK_nlt3EbWrekz2JRd6eNOZxt28fDWUdr7T"/>
+<img alt="Swiss Symbol" class="h-10" data-alt="minimalist swiss confederation cross symbol monochrome vector" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOf-sAZ6HFUbtkfRuCoxu_wKsWNbu62Prrh3Hqbz6fykDEnO6be0ygMvdERSASVHS0Zmo8I59dBMefer0Hq28zgsjM8D2rVHXa2wBuSzPygryKSsCcn7lZWbV_xaXuiH69SbwuAFjgtwT0ayGklwDb4bohMiiXVP4nDNUToZ_LnX9eFI3zcfSBrHKdMcX7G9l1oFvHoBTiUGN4xrEY6Dvaz2XFdlThiOb2dTd7qFb0OLEHBFYr1M8uSgg4ZV1dXfJj0_gOu7J68w6q"/>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Suppressed for focused transactional screen per "Shell Visibility & Relevance" rule, but following the mandate to keep consistency, we'll omit it for this "Sign-up" task as requested by the rule: "exclude the navigation shell if the page intent is Sign-up") -->
+</body></html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Digital Wallet - Gli Italiani in Confederazione</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-primary": "#a5c8ff",
+                        "surface-container": "#e7eefe",
+                        "surface-bright": "#f9f9ff",
+                        "on-tertiary-fixed": "#410001",
+                        "on-primary-fixed-variant": "#17487d",
+                        "tertiary-fixed": "#ffdad5",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#930005",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#151c27",
+                        "tertiary-container": "#980006",
+                        "primary-fixed": "#d4e3ff",
+                        "on-error-container": "#93000a",
+                        "surface": "#f9f9ff",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#91baf7",
+                        "secondary-container": "#89faa5",
+                        "tertiary-fixed-dim": "#ffb4a9",
+                        "tertiary": "#6d0003",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#001c3a",
+                        "on-surface-variant": "#42474f",
+                        "surface-container-low": "#f0f3ff",
+                        "outline": "#737780",
+                        "on-secondary-fixed": "#00210b",
+                        "secondary": "#006d34",
+                        "background": "#f9f9ff",
+                        "primary-fixed-dim": "#a5c8ff",
+                        "surface-tint": "#346096",
+                        "on-tertiary-container": "#ff9f93",
+                        "inverse-on-surface": "#ebf1ff",
+                        "primary-container": "#1a4a7f",
+                        "primary": "#003361",
+                        "surface-variant": "#dce2f3",
+                        "inverse-surface": "#2a313d",
+                        "surface-container-high": "#e2e8f8",
+                        "on-secondary-container": "#007438",
+                        "secondary-fixed": "#89faa5",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#6cdd8c",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#005226",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c3c6d1",
+                        "surface-container-highest": "#dce2f3",
+                        "on-background": "#151c27",
+                        "surface-dim": "#d3daea"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .metallic-gold {
+            background: linear-gradient(135deg, #d4af37 0%, #f9e29c 50%, #b8860b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .metallic-silver {
+            background: linear-gradient(135deg, #a8a8a8 0%, #e0e0e0 50%, #707070 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .metallic-bronze {
+            background: linear-gradient(135deg, #804a00 0%, #cd7f32 50%, #5e3a00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9ff]/80 backdrop-blur-md flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#003361] cursor-pointer" data-icon="menu">menu</span>
+<h1 class="font-['Manrope'] font-extrabold text-[#003361] tracking-[-0.02em]">Gli Italiani in Confederazione</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-highest">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional italian man in a tailored navy suit with soft natural office lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwX7qS8YvIY45mMnPNsjM2fjahlh0PIjiEe14gS7mdKF9ewVtie9ypIKEx7f-dTMRA2EuGjQscCRK7xhj5HXV9WcHa7bNc1dMt_qRbjWIZPftDcsi8fv2Rbz5p8Ngs5AS57tzsJIo_MAiNLhcdtXsx7ArsSQFl9Lza0rHBf6O3C_iryTpFONgo3d8l_TE9a7Mj69EqomrZ9tNBNsMoEpnuUQchEk9sE8zXhmxQ4dxi6NOBNtMFgX5j0CFHwz3ySF3XNX6IITXwYA0N"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="bg-gradient-to-br from-primary to-primary-container rounded-xl p-8 text-white relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline font-bold text-3xl mb-2 tracking-tight">Il Tuo Portafoglio Digitale</h2>
+<p class="text-on-primary-container text-lg opacity-90 max-w-md">Raccogli i tuoi traguardi, certificati e riconoscimenti ufficiali della comunità.</p>
+</div>
+<!-- Glassy Stats Overlay -->
+<div class="absolute right-8 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4">
+<div class="bg-white/10 backdrop-blur-lg border border-white/20 p-4 rounded-lg text-center">
+<span class="block text-2xl font-bold">12</span>
+<span class="text-[10px] uppercase tracking-widest font-label">Badge Totali</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Grid Section -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Main Content: Badges Grid (8 columns) -->
+<div class="md:col-span-8 space-y-8">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline font-bold text-xl text-primary">Riconoscimenti Recenti</h3>
+<div class="h-[2px] w-12 bg-secondary translate-y-[-8px] ml-4 flex-grow opacity-30"></div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+<!-- Gold Badge -->
+<div class="bg-surface-container-lowest p-6 rounded-xl text-center flex flex-col items-center justify-center space-y-4 group transition-all hover:bg-surface-container-low border-b-4 border-transparent hover:border-surface-variant">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-4xl shadow-sm">
+<span class="material-symbols-outlined metallic-gold" data-icon="stars" style="font-variation-settings: 'FILL' 1; font-size: 48px;">stars</span>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-1">Livello Oro</p>
+<h4 class="font-headline font-bold text-sm text-on-surface">Pioniere Digitale</h4>
+</div>
+</div>
+<!-- Silver Badge -->
+<div class="bg-surface-container-lowest p-6 rounded-xl text-center flex flex-col items-center justify-center space-y-4 group transition-all hover:bg-surface-container-low border-b-4 border-transparent hover:border-surface-variant">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-4xl shadow-sm">
+<span class="material-symbols-outlined metallic-silver" data-icon="verified" style="font-variation-settings: 'FILL' 1; font-size: 48px;">verified</span>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-1">Livello Argento</p>
+<h4 class="font-headline font-bold text-sm text-on-surface">Residente 5 Anni</h4>
+</div>
+</div>
+<!-- Bronze Badge -->
+<div class="bg-surface-container-lowest p-6 rounded-xl text-center flex flex-col items-center justify-center space-y-4 group transition-all hover:bg-surface-container-low border-b-4 border-transparent hover:border-surface-variant">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-4xl shadow-sm">
+<span class="material-symbols-outlined metallic-bronze" data-icon="diversity_3" style="font-variation-settings: 'FILL' 1; font-size: 48px;">diversity_3</span>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-1">Livello Bronzo</p>
+<h4 class="font-headline font-bold text-sm text-on-surface">Membro Attivo</h4>
+</div>
+</div>
+<!-- Another Gold Badge -->
+<div class="bg-surface-container-lowest p-6 rounded-xl text-center flex flex-col items-center justify-center space-y-4 group transition-all hover:bg-surface-container-low border-b-4 border-transparent hover:border-surface-variant">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-4xl shadow-sm">
+<span class="material-symbols-outlined metallic-gold" data-icon="military_tech" style="font-variation-settings: 'FILL' 1; font-size: 48px;">military_tech</span>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-1">Livello Oro</p>
+<h4 class="font-headline font-bold text-sm text-on-surface">Volontario Senior</h4>
+</div>
+</div>
+<!-- Locked Badge -->
+<div class="bg-surface-container-low p-6 rounded-xl text-center flex flex-col items-center justify-center space-y-4 opacity-50 grayscale">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center text-4xl">
+<span class="material-symbols-outlined text-outline" data-icon="lock" style="font-size: 32px;">lock</span>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-1">Bloccato</p>
+<h4 class="font-headline font-bold text-sm text-on-surface">Cittadino Onorario</h4>
+</div>
+</div>
+<!-- Locked Badge -->
+<div class="bg-surface-container-low p-6 rounded-xl text-center flex flex-col items-center justify-center space-y-4 opacity-50 grayscale">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center text-4xl">
+<span class="material-symbols-outlined text-outline" data-icon="lock" style="font-size: 32px;">lock</span>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-1">Bloccato</p>
+<h4 class="font-headline font-bold text-sm text-on-surface">Ambasciatore</h4>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar Content (4 columns) -->
+<aside class="md:col-span-4 space-y-8">
+<div class="bg-surface-container-low rounded-xl p-6">
+<h3 class="font-headline font-bold text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="history_edu">history_edu</span>
+                        Attività Recenti
+                    </h3>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-1 h-10 bg-secondary rounded-full"></div>
+<div>
+<p class="text-xs text-outline font-label uppercase tracking-wider">12 OTT 2023</p>
+<p class="text-sm font-medium">Hai ottenuto il badge "Pioniere"</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-1 h-10 bg-primary-container rounded-full"></div>
+<div>
+<p class="text-xs text-outline font-label uppercase tracking-wider">05 OTT 2023</p>
+<p class="text-sm font-medium">Partecipazione Evento Lugano</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-1 h-10 bg-outline-variant rounded-full"></div>
+<div>
+<p class="text-xs text-outline font-label uppercase tracking-wider">28 SET 2023</p>
+<p class="text-sm font-medium">Iscrizione Registro Digitale</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden aspect-[4/3] group">
+<img alt="Community" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Elegant gathering of diverse people in a modern european hall with large windows and soft italian afternoon sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC97caT4oA0nwix-gxxsptopPpwTnAwHL8Re3NPBdmhcQePk9aH4kvsJIVVrtDKlWC6Kmnu9QI_-25HvXI8Vm2k0b5LbptXrXk55MJVy7euHSxBToR6AoVQnR1F6e3R3rKDQAwex5a9ahIRNj84Ot3MSe61pyJvTtDRg5cvje4f9l6gg3LmFRrrRiUm8Zf2gT8xf_A_EIuvso7AG4nTB_RMAoQmGQEfO_PJ0GeCliNY-CoIbtWp7TJF9Y8obTjATpm4TieW8dF2oJYP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<p class="text-white text-sm font-headline font-bold">Unisciti alla Prossima Assemblea Nazionale</p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-[#f9f9ff]/80 backdrop-blur-md flex justify-around items-center px-4 py-3 pb-safe shadow-[0_-12px_40px_rgba(21,28,39,0.06)] rounded-t-2xl">
+<div class="flex flex-col items-center justify-center text-[#151c27]/50 px-3 py-1 ease-in-out duration-300 transform active:scale-90 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px]">Dashboard</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#1a4a7f]/10 text-[#003361] rounded-xl px-3 py-1 ease-in-out duration-300 transform active:scale-90 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px]">Wallet</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#151c27]/50 px-3 py-1 ease-in-out duration-300 transform active:scale-90 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="task_alt">task_alt</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px]">Activities</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#151c27]/50 px-3 py-1 ease-in-out duration-300 transform active:scale-90 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px]">Profile</span>
+</div>
+</nav>
+</body></html>

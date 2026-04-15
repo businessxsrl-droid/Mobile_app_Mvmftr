@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gli Italiani in Confederazione - Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#a5c8ff",
+              "surface-container": "#e7eefe",
+              "surface-bright": "#f9f9ff",
+              "on-tertiary-fixed": "#410001",
+              "on-primary-fixed-variant": "#17487d",
+              "tertiary-fixed": "#ffdad5",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#930005",
+              "error-container": "#ffdad6",
+              "on-surface": "#151c27",
+              "tertiary-container": "#980006",
+              "primary-fixed": "#d4e3ff",
+              "on-error-container": "#93000a",
+              "surface": "#f9f9ff",
+              "on-error": "#ffffff",
+              "on-primary-container": "#91baf7",
+              "secondary-container": "#89faa5",
+              "tertiary-fixed-dim": "#ffb4a9",
+              "tertiary": "#6d0003",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed": "#001c3a",
+              "on-surface-variant": "#42474f",
+              "surface-container-low": "#f0f3ff",
+              "outline": "#737780",
+              "on-secondary-fixed": "#00210b",
+              "secondary": "#006d34",
+              "background": "#f9f9ff",
+              "primary-fixed-dim": "#a5c8ff",
+              "surface-tint": "#346096",
+              "on-tertiary-container": "#ff9f93",
+              "inverse-on-surface": "#ebf1ff",
+              "primary-container": "#1a4a7f",
+              "primary": "#003361",
+              "surface-variant": "#dce2f3",
+              "inverse-surface": "#2a313d",
+              "surface-container-high": "#e2e8f8",
+              "on-secondary-container": "#007438",
+              "secondary-fixed": "#89faa5",
+              "error": "#ba1a1a",
+              "secondary-fixed-dim": "#6cdd8c",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#005226",
+              "surface-container-lowest": "#ffffff",
+              "outline-variant": "#c3c6d1",
+              "surface-container-highest": "#dce2f3",
+              "on-background": "#151c27",
+              "surface-dim": "#d3daea"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f9f9ff;
+        color: #151c27;
+      }
+      h1, h2, h3 {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9ff]/80 dark:bg-[#151c27]/80 backdrop-blur-md flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#003361] dark:text-[#91baf7] cursor-pointer hover:opacity-80 transition-opacity active:scale-95" data-icon="menu">menu</span>
+<h1 class="font-['Manrope'] font-extrabold text-[#003361] dark:text-[#91baf7] tracking-[-0.02em] text-lg">Gli Italiani in Confederazione</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed-dim hover:opacity-80 transition-opacity active:scale-95">
+<img alt="User Avatar" data-alt="close-up portrait of a professional man with a friendly expression in a modern bright setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdNE_1h6mGG60E8QGT3VAYzWnLppkg5lxDuvwcoG_TBH1VdYmy1K1hianpKPu-R1jbkKo-po3uyTL3ANdqjtp4y6MBXFCq6viEQJpLwGvVkxcP5LAz13bVYhzB2F2JGoR2-IPSlv9t6J3yqz8Wbwq9StCtf9jKfv1T0j_ZJCZW2iAXXMq0r5CXmRYDwuIOji_SXpzVoUXadwTJJDpGo2P8O5linz3C1sYHEMhIdhR1s20YOCTcQo6OEoK3BhgHCnCTfF484hWbIldR"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto space-y-8">
+<!-- Welcome Section (Asymmetric Layout) -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-2">
+<p class="text-label-md uppercase tracking-[0.05em] text-secondary font-semibold">Benvenuto nel Portale</p>
+<h2 class="text-4xl font-extrabold text-primary tracking-tight">Alessandro Rossi</h2>
+</div>
+<div class="flex items-center gap-3 bg-secondary-container/30 px-4 py-2 rounded-full">
+<span class="w-2.5 h-2.5 bg-secondary rounded-full"></span>
+<span class="text-on-secondary-container font-medium text-sm">Status: Iscritto</span>
+</div>
+</section>
+<!-- Main Identity Card (Bento Grid Inspired) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 relative overflow-hidden bg-primary-container rounded-3xl p-8 text-on-primary shadow-lg group">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px]" data-icon="id_card">id_card</span>
+</div>
+<div class="relative z-10 space-y-6">
+<div>
+<p class="text-on-primary-container/80 text-sm font-medium uppercase tracking-widest mb-1">Codice Presentatore</p>
+<h3 class="text-5xl font-extrabold tracking-tighter">ITA-CH-8824</h3>
+</div>
+<div class="pt-4 flex gap-4">
+<button class="bg-surface-container-lowest text-primary px-6 py-3 rounded-xl font-bold text-sm flex items-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-sm" data-icon="content_copy">content_copy</span>
+                            COPIA CODICE
+                        </button>
+<button class="bg-primary/40 backdrop-blur-md text-white px-6 py-3 rounded-xl font-bold text-sm flex items-center gap-2 border border-white/10 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+                            CONDIVIDI
+                        </button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-3xl p-8 flex flex-col justify-between">
+<div>
+<h4 class="font-headline font-bold text-xl text-primary mb-2">Network</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Hai invitato 12 connazionali questo mese.</p>
+</div>
+<div class="mt-8">
+<div class="text-3xl font-extrabold text-secondary">+15%</div>
+<p class="text-xs text-outline uppercase tracking-wider">Crescita vs Maggio</p>
+</div>
+</div>
+</div>
+<!-- Institutional Progress (Stepped Timeline) -->
+<section class="bg-surface-container-low rounded-3xl p-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-4">
+<h3 class="text-2xl font-bold text-primary">Onboarding Istituzionale</h3>
+<span class="text-label-md font-bold text-primary bg-primary-fixed-dim/30 px-3 py-1 rounded-lg">LIVELLO 2: ATTIVO</span>
+</div>
+<div class="relative">
+<!-- Progress Line -->
+<div class="absolute top-5 left-0 w-full h-[2px] bg-outline-variant/30 hidden md:block"></div>
+<div class="absolute top-5 left-0 w-[50%] h-[2px] bg-secondary hidden md:block"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+<!-- Step 1 -->
+<div class="flex md:flex-col items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold shadow-sm">
+<span class="material-symbols-outlined text-xl" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-bold text-on-surface">Primi passi (24H)</h4>
+<p class="text-sm text-on-surface-variant">Attivazione profilo e documenti base completata.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex md:flex-col items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold ring-4 ring-secondary/20 ring-offset-2">
+                            2
+                        </div>
+<div class="space-y-1">
+<h4 class="font-bold text-on-surface">Integrazione (7 Giorni)</h4>
+<p class="text-sm text-on-surface-variant">Convalida residenza e iscrizione AIRE in corso.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex md:flex-col items-start gap-4 opacity-40">
+<div class="w-10 h-10 rounded-full bg-surface-variant text-outline flex items-center justify-center font-bold">
+                            3
+                        </div>
+<div class="space-y-1">
+<h4 class="font-bold text-on-surface">Pieno Accesso (30 Giorni)</h4>
+<p class="text-sm text-on-surface-variant">Sblocco dei servizi consolari premium.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic Insights (Asymmetric Cards) -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest border border-outline-variant/10 rounded-2xl p-6 flex gap-6 hover:shadow-xl transition-shadow cursor-pointer">
+<div class="w-16 h-16 shrink-0 bg-tertiary-fixed rounded-2xl flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl" data-icon="description">description</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-bold text-lg text-primary">Nuovo Vademecum AIRE</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Scarica la guida aggiornata 2024 per gli italiani a Zurigo.</p>
+<div class="pt-2">
+<span class="text-xs font-bold text-secondary flex items-center gap-1 uppercase tracking-tighter">
+                            Disponibile ora
+                            <span class="material-symbols-outlined text-xs" data-icon="arrow_forward">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/10 rounded-2xl p-6 flex gap-6 hover:shadow-xl transition-shadow cursor-pointer">
+<div class="w-16 h-16 shrink-0 bg-primary-fixed rounded-2xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="event">event</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-bold text-lg text-primary">Webinar: Fisco Italia-CH</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Giovedì 15 Giugno, ore 18:30. Incontro con esperti fiscali.</p>
+<div class="pt-2">
+<span class="text-xs font-bold text-primary flex items-center gap-1 uppercase tracking-tighter">
+                            Prenota Posto
+                            <span class="material-symbols-outlined text-xs" data-icon="arrow_forward">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe bg-[#f9f9ff]/80 dark:bg-[#151c27]/80 backdrop-blur-md rounded-t-2xl shadow-[0_-12px_40px_rgba(21,28,39,0.06)]">
+<a class="flex flex-col items-center justify-center bg-[#1a4a7f]/10 dark:bg-[#91baf7]/10 text-[#003361] dark:text-[#91baf7] rounded-xl px-3 py-1 ease-in-out duration-300 transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px] mt-1">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#151c27]/50 dark:text-[#dce2f3]/50 px-3 py-1 hover:text-[#006d34] dark:hover:text-[#3fb96e] ease-in-out duration-300 transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px] mt-1">Wallet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#151c27]/50 dark:text-[#dce2f3]/50 px-3 py-1 hover:text-[#006d34] dark:hover:text-[#3fb96e] ease-in-out duration-300 transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="task_alt">task_alt</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px] mt-1">Activities</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#151c27]/50 dark:text-[#dce2f3]/50 px-3 py-1 hover:text-[#006d34] dark:hover:text-[#3fb96e] ease-in-out duration-300 transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px] mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

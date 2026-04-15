@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gli Italiani in Confederazione - Notizie</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#003361",
+              "surface": "#f9f9ff",
+              "primary-fixed-dim": "#a5c8ff",
+              "on-tertiary-container": "#ff9f93",
+              "outline-variant": "#c3c6d1",
+              "on-secondary": "#ffffff",
+              "secondary-container": "#89faa5",
+              "inverse-on-surface": "#ebf1ff",
+              "surface-container": "#e7eefe",
+              "primary-fixed": "#d4e3ff",
+              "error-container": "#ffdad6",
+              "surface-bright": "#f9f9ff",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed": "#ffdad5",
+              "inverse-primary": "#a5c8ff",
+              "secondary-fixed": "#89faa5",
+              "outline": "#737780",
+              "tertiary": "#6d0003",
+              "on-surface": "#151c27",
+              "surface-variant": "#dce2f3",
+              "surface-tint": "#346096",
+              "on-surface-variant": "#42474f",
+              "on-error-container": "#93000a",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#007438",
+              "on-error": "#ffffff",
+              "on-background": "#151c27",
+              "inverse-surface": "#2a313d",
+              "primary-container": "#1a4a7f",
+              "on-primary-fixed-variant": "#17487d",
+              "tertiary-fixed-dim": "#ffb4a9",
+              "tertiary-container": "#980006",
+              "on-tertiary-fixed-variant": "#930005",
+              "on-tertiary-fixed": "#410001",
+              "secondary": "#006d34",
+              "on-primary-container": "#91baf7",
+              "on-secondary-fixed-variant": "#005226",
+              "on-primary": "#ffffff",
+              "surface-container-low": "#f0f3ff",
+              "secondary-fixed-dim": "#6cdd8c",
+              "on-primary-fixed": "#001c3a",
+              "background": "#f9f9ff",
+              "on-secondary-fixed": "#00210b",
+              "error": "#ba1a1a",
+              "surface-container-highest": "#dce2f3",
+              "surface-container-high": "#e2e8f8",
+              "surface-dim": "#d3daea"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .backdrop-blur-md {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9ff]/80 dark:bg-[#151c27]/80 backdrop-blur-md flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#003361] dark:text-[#91baf7] cursor-pointer hover:opacity-80 transition-opacity active:scale-95" data-icon="menu">menu</span>
+<h1 class="font-['Manrope'] font-extrabold text-[#003361] dark:text-[#91baf7] tracking-[-0.02em] text-lg">Gli Italiani in Confederazione</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant/20 transition-opacity hover:opacity-80 active:scale-95">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="professional headshot of a person in a navy suit against a clean white background, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq2X9LaJGoLfbQPjsXWOKbjKVjuhUrYo45SKVoB00IVooeeHApwK6cohwHjTVBGPrQ-n6eYw95hh1fVRUC5rCqwr3GWF_VPgwIJ6PrTllYYFxPrORV-522LBDfzoJHiDP0JJFrhOZxxawGZ7MghEH-A1pz3boAMNoPOH-RAN1ZYuUzkGBuL5heWQwf2FOuEofYA7VXolq8URz1OlXv5KJ9mRlqUaY_IaTOO0dt6oW3dU3LyPlSyuUO-vtFRTx3tMRMVpPk0EPLDGFI"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Search & Filters -->
+<section class="mb-12">
+<div class="relative w-full mb-8 group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface-container-low border-b-2 border-outline-variant/40 focus:border-secondary outline-none py-4 pl-12 pr-4 font-body text-on-surface transition-all" placeholder="Cerca notizie o eventi..." type="text"/>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-2 no-scrollbar">
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary-container text-on-primary-container font-medium text-sm font-label uppercase tracking-[0.05em]">Tutti</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-highest text-primary font-medium text-sm font-label uppercase tracking-[0.05em] hover:bg-surface-container-high transition-colors">Istituzionale</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-highest text-primary font-medium text-sm font-label uppercase tracking-[0.05em] hover:bg-surface-container-high transition-colors">Eventi</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-highest text-primary font-medium text-sm font-label uppercase tracking-[0.05em] hover:bg-surface-container-high transition-colors">Territorio</button>
+</div>
+</section>
+<!-- Featured News -->
+<section class="mb-16">
+<div class="relative overflow-hidden rounded-xl bg-primary-container group cursor-pointer transition-transform duration-500 active:scale-[0.98]">
+<div class="grid md:grid-cols-2 items-stretch">
+<div class="relative h-64 md:h-full overflow-hidden">
+<img alt="Featured News" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic wide shot of the Swiss Federal Palace in Bern at twilight, illuminated against a deep blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLjlF7I-vBaiJTfOHV1oMw9Vp3HoI1ASiIdBWnHEkk9WoUiT-1Li3SCrkgE2TsfMelqZ1es-w9fO6mI9PGh62ndKLPQ-CiwtGjX3J3_WkXMSHkdJ2LXlZTckWdWe6jw-0vRkQGbBhWyOq3uhfmwYgYO-jDFlW2uXQLIhBEDmdTt7RXIr4mB7qKLrhd2hxuDpj_lQCl1Z81C9dIxRb8SZupetKfsEIhoULQ9pfR1uG2v2QspZzAUjKuuBzqXUVCCZRYISwzeigcv0Uf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent md:hidden"></div>
+</div>
+<div class="p-8 md:p-12 flex flex-col justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary">
+<div class="flex items-center gap-2 mb-4">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label uppercase text-[10px] tracking-widest text-on-primary-container">In Primo Piano</span>
+</div>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl mb-6 leading-tight tracking-tight">
+                            Nuovi accordi bilaterali per la mobilità professionale
+                        </h2>
+<p class="font-body text-on-primary-container/90 text-lg mb-8 line-clamp-3 leading-relaxed">
+                            Siglato oggi il protocollo d'intesa tra Roma e Berna per facilitare il riconoscimento dei titoli di studio tecnici e agevolare il rientro dei talenti.
+                        </p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label text-xs uppercase tracking-wider opacity-60">12 Maggio 2024</span>
+<button class="flex items-center gap-2 font-headline font-bold text-sm uppercase tracking-wider group/btn">
+                                Leggi Tutto
+                                <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- News Feed Grid -->
+<section>
+<div class="flex items-center gap-4 mb-10">
+<h3 class="font-headline font-bold text-2xl text-primary tracking-tight">Ultime Notizie</h3>
+<div class="h-0.5 flex-grow bg-outline-variant/20 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Article 1 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="relative aspect-[16/10] overflow-hidden rounded-lg mb-6 bg-surface-container-low">
+<img alt="Eventi News" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Atmospheric night scene of an outdoor Italian piazza festival with warm string lights and people socializing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZoOE9VvYt2SjxE04JTUwZrHHr6Cd8Tn5jvM664E5TVfmo-SpICdgodEEsLg7vq-V07epLD8C3Fj4TsqkGc7HfeOh8NrSTrpJw0gc2BDVjoOs8BN-CR6N3qYXd_rYAn5gqZ_nvWWc4H2fA4aM4Z-KLsda2TtettnlLMyp0nE6xstgOlS01fZkXo2sMczMHeBMc1SLbOC7qgVKq7yBzRT6LkuYGInioJ9UwG9VjdF3zhlE7B1MtaXSa1S0qIDprgIlVmv-YTUHDDP2m"/>
+<span class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded text-[10px] font-label font-bold uppercase tracking-wider text-primary">Eventi</span>
+</div>
+<time class="font-label text-[10px] uppercase tracking-widest text-outline mb-3">09 Maggio 2024</time>
+<h4 class="font-headline font-bold text-xl text-on-surface mb-3 group-hover:text-primary transition-colors leading-snug">
+                        Festival del Cinema Italiano a Zurigo: il programma completo
+                    </h4>
+<p class="font-body text-sm text-on-surface-variant line-clamp-2 leading-relaxed mb-4">
+                        Torna la rassegna dedicata al cinema contemporaneo con ospiti internazionali e anteprime esclusive dal Festival di Venezia.
+                    </p>
+<div class="mt-auto pt-4 border-t border-outline-variant/10 flex items-center justify-between">
+<span class="text-xs font-label text-outline">Tempo di lettura: 4 min</span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="bookmark">bookmark</span>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="relative aspect-[16/10] overflow-hidden rounded-lg mb-6 bg-surface-container-low">
+<img alt="Territorio News" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern glass skyscraper reflection of clouds and sky in a corporate Swiss financial district" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoo_WQeXp-GMG8mTOizIBej-DpcEgifG3Tz6u9uc7-06YZZwLVzmIfnYoZYFsEudQCsDzhQKL5Szh-6GJgX1V6FUz1j_v4RDYJJJnYBI65ESG-7GPfgNSB2cc1J_u2JfIqwGw7ExoFbuXkFs5r2Xjarfj_U0rQC7kqX1iUDeBZFfOxVOMqAozxh_j68Ff5BJ1htYLy_tS39DquHhjQaUEPUH5jeZ6cpwrSTUfamrYuPB8LztuwfUXVXoJeXerH3Yk8VFnppyjApfKc"/>
+<span class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded text-[10px] font-label font-bold uppercase tracking-wider text-primary">Territorio</span>
+</div>
+<time class="font-label text-[10px] uppercase tracking-widest text-outline mb-3">07 Maggio 2024</time>
+<h4 class="font-headline font-bold text-xl text-on-surface mb-3 group-hover:text-primary transition-colors leading-snug">
+                        Guida fiscale 2024 per i frontalieri e residenti
+                    </h4>
+<p class="font-body text-sm text-on-surface-variant line-clamp-2 leading-relaxed mb-4">
+                        Aggiornamenti sulle nuove soglie di esenzione e le modalità di dichiarazione per l'anno fiscale in corso.
+                    </p>
+<div class="mt-auto pt-4 border-t border-outline-variant/10 flex items-center justify-between">
+<span class="text-xs font-label text-outline">Tempo di lettura: 8 min</span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="bookmark">bookmark</span>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="relative aspect-[16/10] overflow-hidden rounded-lg mb-6 bg-surface-container-low">
+<img alt="Istituzionale News" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Two professional people shaking hands in a bright, modern minimalist office space with large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnDzUVvB8ia_ImmV6VtJEDaIxUKJQKhVVgMX9CLGtK3qTYrUkYlFjKjghlKl5y-iZK88xJbu0bEE1BsHhu-T6KUuYkmQzF2dTiZS3zQeQPe5n26uqRKYBKNsw_yCp7vlpDCgdXSbcbeDGxOjTCL-33svwkKjhfRXyvqtfMKHeQyUfr2KD9CTWiMTEdUaIT_9XDPmql8-MvtYxWAxIzjTQkJTwOZ-vOl7g_EY2qqwswKWfHsmKym1_AuJjygwzmULCDaI_BeMMhReMh"/>
+<span class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded text-[10px] font-label font-bold uppercase tracking-wider text-primary">Istituzionale</span>
+</div>
+<time class="font-label text-[10px] uppercase tracking-widest text-outline mb-3">04 Maggio 2024</time>
+<h4 class="font-headline font-bold text-xl text-on-surface mb-3 group-hover:text-primary transition-colors leading-snug">
+                        Rinnovate le cariche del Comites di Ginevra
+                    </h4>
+<p class="font-body text-sm text-on-surface-variant line-clamp-2 leading-relaxed mb-4">
+                        Il comitato si apre alle nuove generazioni: ecco i nomi dei nuovi consiglieri eletti per il prossimo mandato.
+                    </p>
+<div class="mt-auto pt-4 border-t border-outline-variant/10 flex items-center justify-between">
+<span class="text-xs font-label text-outline">Tempo di lettura: 3 min</span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="bookmark">bookmark</span>
+</div>
+</article>
+</div>
+<div class="mt-16 flex justify-center">
+<button class="px-10 py-4 bg-surface-container-highest text-primary font-headline font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-surface-container-high active:scale-95 transition-all">
+                    Carica altre notizie
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe bg-[#f9f9ff]/80 dark:bg-[#151c27]/80 backdrop-blur-md shadow-[0_-12px_40px_rgba(21,28,39,0.06)] rounded-t-2xl">
+<a class="flex flex-col items-center justify-center text-[#151c27]/50 dark:text-[#dce2f3]/50 px-3 py-1 ease-in-out duration-300 transform active:scale-90 hover:text-[#006d34] dark:hover:text-[#3fb96e]" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px] mt-1">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#151c27]/50 dark:text-[#dce2f3]/50 px-3 py-1 ease-in-out duration-300 transform active:scale-90 hover:text-[#006d34] dark:hover:text-[#3fb96e]" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px] mt-1">Wallet</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#1a4a7f]/10 dark:bg-[#91baf7]/10 text-[#003361] dark:text-[#91baf7] rounded-xl px-3 py-1 ease-in-out duration-300 transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="task_alt">task_alt</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px] mt-1">Activities</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#151c27]/50 dark:text-[#dce2f3]/50 px-3 py-1 ease-in-out duration-300 transform active:scale-90 hover:text-[#006d34] dark:hover:text-[#3fb96e]" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] font-medium uppercase tracking-[0.05em] text-[10px] mt-1">Profile</span>
+</a>
+</nav>
+</body></html>
